@@ -31,6 +31,15 @@
 
 ## 5.結果の確認
 
+## 実行方法
+### 実行ファイル生成
+gcc udp_server.c -o udp_server
+gcc udp_client.c -o udp_client
+### ターミナル１
+./udp_server test_rx_1.txt test_rx_1_time.txt
+### ターミナル2
+./udp_client test_tx_1.txt
+
 ## メモ
 　とりあえずループバックアドレスで試しておく。
 
