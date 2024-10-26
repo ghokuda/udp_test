@@ -30,13 +30,13 @@ int main(int argc, char *argv[]) {
         exit(EXIT_FAILURE);
     }
 
-    // アドレス再利用オプションの有効化
-    int reuse_enable = 1;
-    if (setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &reuse_enable, sizeof(reuse_enable)) < 0) {
-        perror("Failed to set reuse address option");
-        close(sockfd);
-        exit(EXIT_FAILURE);
-    }
+    // // アドレス再利用オプションの有効化
+    // int reuse_enable = 1;
+    // if (setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &reuse_enable, sizeof(reuse_enable)) < 0) {
+    //     perror("Failed to set reuse address option");
+    //     close(sockfd);
+    //     exit(EXIT_FAILURE);
+    // }
 
     // サーバアドレスの設定
     server_addr.sin_family = AF_INET;

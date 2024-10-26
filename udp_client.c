@@ -28,13 +28,13 @@ int main(int argc, char *argv[]) {
         exit(EXIT_FAILURE);
     }
 
-    // ブロードキャストオプションの有効化
-    int broadcast_enable = 1;
-    if (setsockopt(sockfd, SOL_SOCKET, SO_BROADCAST, &broadcast_enable, sizeof(broadcast_enable)) < 0) {
-        perror("Failed to set broadcast option");
-        close(sockfd);
-        exit(EXIT_FAILURE);
-    }
+    // // ブロードキャストオプションの有効化
+    // int broadcast_enable = 1;
+    // if (setsockopt(sockfd, SOL_SOCKET, SO_BROADCAST, &broadcast_enable, sizeof(broadcast_enable)) < 0) {
+    //     perror("Failed to set broadcast option");
+    //     close(sockfd);
+    //     exit(EXIT_FAILURE);
+    // }
  
      // サーバアドレスの設定
     server_addr.sin_family = AF_INET;
