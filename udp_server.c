@@ -68,6 +68,9 @@ int main(int argc, char *argv[]) {
         buffer[n] = '\0';
         printf("Received: %s\n", buffer);
 
+        // アプリケーションヘッダのチェック　→ 受信した時にチェックして差し替える？アプリケーションデータだけを残す？
+        // TODO:
+
         // データをファイルに書き出し
         fprintf(data_file, "%s\n", buffer);
 
